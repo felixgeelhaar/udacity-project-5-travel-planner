@@ -9,46 +9,29 @@
       <h1>Travel Planner</h1>
     </header>
     <main>
-      <section id="result">
-        <div id="trip-image">
-          <img src="https://via.placeholder.com/320" alt="Paris, France" />
-        </div>
-        <div id="trip-data">
-          <h2 id="location">My trip to: Paris, France</h2>
-          <h3 id="departing-time">Departing: 20.01.2020</h3>
-          <div class="trip-buttons">
-            <button>Save Trip</button>
-            <button>Remove Trip</button>
-          </div>
-          <p id="waiting-time">Paris, France is 220 days away</p>
-          <div id="weather">
-            <p id="weather-headline">Typical weather for then is:</p>
-            <p id="weather-conditions">
-              High – 10, Low – -2
-            </p>
-            <p id="weather-summary">Nice and shiny</p>
-          </div>
-        </div>
-      </section>
       <section id="search">
-        <form id="trip-form">
+        <form id="search-trip-form">
           <fieldset>
-            <label id="location-label" for="location-input">My trip to:</label>
+            <label id="search-trip-location-label" for="search-trip-location"
+              >My trip to:</label
+            >
             <input
               type="text"
-              id="location-input"
+              id="search-trip-location"
               placeholder="Enter location"
-              list="cities"
+              list="search-trip-locations"
               autocomplete="on"
             />
           </fieldset>
           <fieldset>
-            <label id="depart-label" for="depart-date">Departing:</label>
-            <input type="date" id="depart-date" />
+            <label id="search-trip-date-label" for="search-trip-date"
+              >Departing:</label
+            >
+            <input type="date" id="search-trip-date" />
           </fieldset>
-          <div class="trip-buttons">
-            <button id="save-button" type="submit">Save trip</button>
-            <button id="remove-button" type="submit">Remove trip</button>
+          <div id="search-trip-buttons">
+            <button id="search-trip-save" type="submit">Save trip</button>
+            <button id="search-trip-reset" type="reset">Reset</button>
           </div>
         </form>
       </section>
@@ -58,9 +41,10 @@
         <p id="powered-by">
           Powered by
           <a href="https://darksky.net/poweredby/" target="_blank">Dark Sky</a>
-          <a href="https://www.geonames.org/" target="_blank">geonames.org</a>
-          <a href="" target="_blank"
-            ><img src="./pixabay-logo.png" alt="Pixabay"
+          |
+          <a href="https://www.geonames.org/" target="_blank">geonames.org</a> |
+          <a href="https://pixabay.com/" target="_blank"
+            ><img id="pixabay" alt="Pixabay"
           /></a>
         </p>
       </div>
